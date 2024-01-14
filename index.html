@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home</title>
+    <link rel="stylesheet" href="design.css"/>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="navigation">
+        <div class="navigation_left">
+            <a href="index.html">
+                <img src="icon.png" alt="icon" class="navigation_icon">
+            </a>
+        </div>
+        <div class="navigation_center">
+            <button class="navigation_buttons">Home</button>
+            <button class="navigation_buttons">TV Shows</button>
+            <button class="navigation_buttons">Movies</button>
+            <button class="navigation_buttons">New & Popular</button>
+            <button class="navigation_buttons">My List</button>
+        </div>
+
+       
+        <div class="navigation_search">
+           <img src="searchphoto.png" alt="Search" class="navigation_searchbutton">
+        </div>
+        
+        <div class="navigation_right">
+            <img src="face.png" alt="nav_avatar" class="navigation_avatar">
+        </div>
+       
+    </div>
+
+    <!--banner-->
+    <header id="banner">
+        <div id="banner_contents">
+            <h1 id="banner_title"></h1>
+            <div id="banner_buttons">
+                
+                <button id="banner_buttons">Play</button>
+                <button id="banner_buttons">My List</button>
+            </div>
+            <p id="banner_description"></p>
+        </div>
+        <div id="fade_button"></div>
+    </header>
+
+    <!--ROWS-->
+    <div id="head_row">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+    </div>
+
+    <!--some JAVAscript for scroll function-->
+ 
+<script>
+        window.addEventListener("scroll",function(){
+            var navigation = document.querySelector(".navigation")
+            navigation.classList.toggle("active", window.scrollY > 0);
+        }
+        )
+    </script>> 
+  
+</body>
+</html>
